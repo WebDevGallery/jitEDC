@@ -63,7 +63,7 @@ h6,
 .h05,
 .h06 {
   font-family: "montserrat-bold", sans-serif;
-  color: #151515;
+  color: #f1f1f1;
   font-style: normal;
   text-rendering: optimizeLegibility;
   margin-bottom: 2.1rem;
@@ -1108,7 +1108,7 @@ input::-moz-focus-inner {
   font-family: "librebaskerville-bold", serif;
   font-size: 4.8rem;
   line-height: 1.375;
-  color: #151515;
+  color: #f1f1f1;
 }
 .section-intro h3 {
   font-family: "montserrat-bold", sans-serif;
