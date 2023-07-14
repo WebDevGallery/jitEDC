@@ -2489,7 +2489,7 @@ html[data-useragent*="MSIE 10.0"] .scrolldown,
 #clients .owl-carousel .owl-dots .owl-dot {
   display: inline-block;
   zoom: 1;
-  *display: inline;
+  display: inline;
 }
 #clients .owl-carousel .owl-dots .owl-dot span {
   width: 9px;
