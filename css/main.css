@@ -1959,7 +1959,7 @@ html[data-useragent*="MSIE 10.0"] .scrolldown,
 
 .col-full li{
     text-decoration: none;
-    text-align: left;
+    list-style-type: none;
 }
 /* ------------------------------------------------------------------- 
  * responsive:
