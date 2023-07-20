@@ -1957,6 +1957,10 @@ html[data-useragent*="MSIE 10.0"] .scrolldown,
   text-align: justify;
 }
 
+.col-full li{
+    text-decoration: none;
+    text-align: left;
+}
 /* ------------------------------------------------------------------- 
  * responsive:
  * services
