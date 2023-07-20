@@ -1960,6 +1960,10 @@ html[data-useragent*="MSIE 10.0"] .scrolldown,
 .col-full li{
     text-decoration: none;
     list-style-type: none;
+    margin: 0px;
+    text-align: left;
+    font-size: 20px;
+    
 }
 /* ------------------------------------------------------------------- 
  * responsive:
