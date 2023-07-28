@@ -1482,7 +1482,7 @@ header .header-logo a {
   width: 100%;
   height: 100%;
   background-color: #333;
-  background-image: url(HomeBackground);
+  background-image: url(images/backgrounds/1.jpg);
   background-repeat: no-repeat;
   background-position: center 30%;
   -webkit-background-size: cover;
@@ -1491,6 +1491,7 @@ header .header-logo a {
   background-attachment: fixed;
   min-height: 804px;
   position: relative;
+  opacity: 1;
 }
 .register-summit:hover {
   background-color: #000;
@@ -1870,7 +1871,7 @@ html[data-useragent*="MSIE 10.0"] .scrolldown,
  * ------------------------------------------------------------------- */
 #services {
   background-color: #19191b;
-  background-image: url(https://unsplash.com/photos/9a58YsGiTPk?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink);
+  background-image: url(images/backgrounds/nordwood-themes-9a58YsGiTPk-unsplash.jpg);
   background-repeat: no-repeat;
   background-position: center;
   -webkit-background-size: cover;
@@ -2018,7 +2019,7 @@ html[data-useragent*="MSIE 10.0"] .scrolldown,
   padding: 0;
 }
 #portfolio .intro-wrap {
-  padding: 15rem 0 21rem;
+  padding: 0rem 0 21rem;
   background: #111111;
 }
 #portfolio .section-intro h3 {
@@ -2519,7 +2520,7 @@ html[data-useragent*="MSIE 10.0"] .scrolldown,
  *
  * ------------------------------------------------------------------- */
 #contact {
-  background-color: #333;
+  background-image: url(images/backgrounds/pexels-kai-pilger-1341279.jpg);
   background-repeat: no-repeat;
   background-position: center;
   -webkit-background-size: cover;
@@ -3172,3 +3173,20 @@ footer h4.h05::after {
   }
 }
 
+.goback{
+    position: fixed;
+    left: 88%;
+    top: 10%;
+}
+.goback img{
+  height: 100px;
+  width: 100px;
+  filter: invert(100%);
+  
+}
+
+.goback :hover{
+  height: 105px;
+  width: 105px;
+  transition: all ease-in-out;
+}
