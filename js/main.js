@@ -5,8 +5,7 @@
     var cfg = {
             defAnimation: "fadeInUp", // default css animation		
             scrollDuration: 800, // smoothscroll duration
-            mailChimpURL: 'http://facebook.us8.list-manage.com/subscribe/post?u=cdb7b577e41181934ed6a6a44&amp;id=e65110b38d'
-        },
+            },
 
         $WIN = $(window);
 
