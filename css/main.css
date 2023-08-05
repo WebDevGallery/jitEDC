@@ -1214,26 +1214,66 @@ header .row {
 /* ------------------------------------------------------------------- 
  * header logo - (_layout.css) 
  * ------------------------------------------------------------------- */
-header .header-logo {
+header #logo0{
   position: absolute;
-  left: 32px;
+  left: 6%;
   top: 32px;
   -moz-transition: all 1s ease-in-out;
   -o-transition: all 1s ease-in-out;
   -webkit-transition: all 1s ease-in-out;
   -ms-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
+
 }
-header .header-logo a {
+
+.logo{
+  display: grid;
+  grid-template-columns: repeat(100px);
+  grid-gap: 20px ;
+}
+
+header #logo0 a {
   display: block;
-  margin: 0;
+  margin-left: 40px;
   padding: 0;
   outline: 0;
   border: none;
-  width: 150px;
-  height: 150px;
-  background: url('images/edc-logo.png') no-repeat center;
-  background-size: 140px 140px;
+  width: 100px;
+  height: 100px;
+  background: url('images/backgrounds/logo.jpg') no-repeat center;
+  background-size: 100px 100px;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+header #logo1{
+  position: absolute;
+  left: 20%;
+  top: 32px;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+
+}
+
+
+header #logo1 a {
+  display: block;
+  margin-left: 40px;
+  padding: 0;
+  outline: 0;
+  border: none;
+  width: 100px;
+  height: 100px;
+  background: url('images/backgrounds/logo.jpg') no-repeat center;
+  background-size: 100px 100px;
   font: 0/0 a;
   text-shadow: none;
   color: transparent;
@@ -1244,6 +1284,102 @@ header .header-logo a {
   transition: all 0.5s ease-in-out;
 }
 
+header #logo2{
+  position: absolute;
+  left: 34%;
+  top: 32px;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+
+}
+
+
+header #logo2 a {
+  display: block;
+  margin-left: 40px;
+  padding: 0;
+  outline: 0;
+  border: none;
+  width: 100px;
+  height: 100px;
+  background: url('images/backgrounds/logo.jpg') no-repeat center;
+  background-size: 100px 100px;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+header #logo3{
+  position: absolute;
+  left: 48%;
+  top: 32px;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+
+}
+
+
+header #logo3 a {
+  display: block;
+  margin-left: 40px;
+  padding: 0;
+  outline: 0;
+  border: none;
+  width: 100px;
+  height: 100px;
+  background: url('images/backgrounds/logo.jpg') no-repeat center;
+  background-size: 100px 100px;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+header #logo4{
+  position: absolute;
+  left: 62%;
+  top: 32px;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+
+}
+
+
+header #logo4 a {
+  display: block;
+  margin-left: 40px;
+  padding: 0;
+  outline: 0;
+  border: none;
+  width: 100px;
+  height: 100px;
+  background: url('images/backgrounds/logo.jpg') no-repeat center;
+  background-size: 100px 100px;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
 /* ------------------------------------------------------------------- 
  * menu trigger - (_layout.css) 
  * ------------------------------------------------------------------- */
@@ -1462,13 +1598,38 @@ header .header-logo a {
  * header section 
  * ------------------------------------------------------------------- */
 @media only screen and (max-width: 768px) {
-  header .header-logo a {
-    width: 50px;
-    height: 40px;
-    background-size: 50px 40px;
+  header #logo0 a{
+    width: 30px;
+    height: 30px;
+    background-size: 30px 30px;
+    margin: 0px;
+  }
+  header #logo1 a{
+    width: 30px;
+    height: 30px;
+    background-size: 30px 30px;
+    margin: 0px;
+  }
+  header #logo2 a{
+    width: 30px;
+    height: 30px;
+    background-size: 30px 30px;
+    margin: 0px;
+  }
+  header #logo3 a{
+    width: 30px;
+    height: 30px;
+    background-size: 30px 30px;
+    margin: 0px;
+  }
+  header #logo4 a{
+    width: 30px;
+    height: 30px;
+    background-size: 30px 30px;
+    margin: 0px;
   }
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 550px) {
   #header-menu-trigger .header-menu-text {
     display: none;
   }
