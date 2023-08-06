@@ -1226,11 +1226,6 @@ header #logo0{
 
 }
 
-.logo{
-  display: grid;
-  grid-template-columns: repeat(100px);
-  grid-gap: 20px ;
-}
 
 header #logo0 a {
   display: block;
@@ -1240,8 +1235,8 @@ header #logo0 a {
   border: none;
   width: 100px;
   height: 100px;
-  background: url('images/backgrounds/logo.jpg') no-repeat center;
-  background-size: 100px 100px;
+  background: url('images/backgrounds/logos/JIT\ TEXT\ LOGO\ White\ text.png') no-repeat center;
+  background-size: 100px 50px;
   font: 0/0 a;
   text-shadow: none;
   color: transparent;
@@ -1272,7 +1267,7 @@ header #logo1 a {
   border: none;
   width: 100px;
   height: 100px;
-  background: url('images/backgrounds/logo.jpg') no-repeat center;
+  background: url('images/backgrounds/logos/ciirc.png') no-repeat center;
   background-size: 100px 100px;
   font: 0/0 a;
   text-shadow: none;
@@ -1335,10 +1330,10 @@ header #logo3 a {
   padding: 0;
   outline: 0;
   border: none;
-  width: 100px;
+  width: 150px;
   height: 100px;
-  background: url('images/backgrounds/logo.jpg') no-repeat center;
-  background-size: 100px 100px;
+  background: url('images/backgrounds/logos/aic-jitf-logo.png') no-repeat center;
+  background-size: 120px 60px;
   font: 0/0 a;
   text-shadow: none;
   color: transparent;
@@ -1363,14 +1358,14 @@ header #logo4{
 
 header #logo4 a {
   display: block;
-  margin-left: 40px;
+  margin-left: 60px;
   padding: 0;
   outline: 0;
   border: none;
-  width: 100px;
+  width: 160px;
   height: 100px;
-  background: url('images/backgrounds/logo.jpg') no-repeat center;
-  background-size: 100px 100px;
+  background: url('images/backgrounds/logos/Institutions_Innovation_Council_IIC-removebg-preview.png') no-repeat center;
+  background-size: 160px 100px;
   font: 0/0 a;
   text-shadow: none;
   color: transparent;
@@ -1597,36 +1592,68 @@ header #logo4 a {
  * responsive:
  * header section 
  * ------------------------------------------------------------------- */
-@media only screen and (max-width: 768px) {
+@media (min-width:400px) and (max-width: 768px) {
   header #logo0 a{
-    width: 30px;
+    width: 60px;
     height: 30px;
-    background-size: 30px 30px;
+    background-size: 60px 30px;
     margin: 0px;
   }
   header #logo1 a{
-    width: 30px;
+    width: 60px;
     height: 30px;
-    background-size: 30px 30px;
+    background-size: 60px 30px;
     margin: 0px;
   }
   header #logo2 a{
-    width: 30px;
-    height: 30px;
-    background-size: 30px 30px;
-    margin: 0px;
+    width: 40px;
+    height: 25px;
+    background-size: 40px 25px;
+    margin-left: 10px;
   }
   header #logo3 a{
-    width: 30px;
+    width: 60px;
     height: 30px;
-    background-size: 30px 30px;
+    background-size: 60px 30px;
     margin: 0px;
   }
   header #logo4 a{
-    width: 30px;
+    width: 60px;
     height: 30px;
-    background-size: 30px 30px;
+    background-size: 60px 30px;
+    margin-left: 10px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  header #logo0 a{
+    width: 40px;
+    height: 20px;
+    background-size: 40px 20px;
     margin: 0px;
+  }
+  header #logo1 a{
+    width: 40px;
+    height: 20px;
+    background-size: 40px 20px;
+    margin: 0px;
+  }
+  header #logo2 a{
+    width: 40px;
+    height: 20px;
+    background-size: 40px 20px;
+    margin: 0px;
+  }
+  header #logo3 a{
+    width: 40px;
+    height: 20px;
+    background-size: 40px 20px;
+    margin: 0px;
+  }
+  header #logo4 a{
+    width: 60px;
+    height: 20px;
+    background-size: 60px 30px;
+    margin-left: 0px;
   }
 }
 @media only screen and (max-width: 550px) {
@@ -1634,6 +1661,7 @@ header #logo4 a {
     display: none;
   }
 }
+
 
 /* ===================================================================
  *  10. home - (_layout.scss)
@@ -3336,19 +3364,27 @@ footer h4.h05::after {
 }
 
 .goback{
+  display: block;
     position: fixed;
-    left: 88%;
+    left: 90%;
     top: 10%;
 }
 .goback img{
-  height: 100px;
-  width: 100px;
-  filter: invert(100%);
-  
+  height: 50px;
+  width: 50px;
+  filter: invert(100%);;
 }
 
 .goback :hover{
-  height: 105px;
-  width: 105px;
-  transition: all ease-in-out;
+  height: 60px;
+  width: 60px;
+  transition: 2s;
+  cursor: pointer;
+}
+
+@media only screen and  (max-width:700px){
+  .goback img{  
+    height: 20px ;
+    width: 20px;
+  }
 }
