@@ -17,7 +17,7 @@ html {
 }
 @media only screen and (max-width: 400px) {
   html {
-    font-size: 9.375px;
+    font-size: 8px;
   }
 }
 
@@ -1214,9 +1214,9 @@ header .row {
 /* ------------------------------------------------------------------- 
  * header logo - (_layout.css) 
  * ------------------------------------------------------------------- */
-header #logo0{
+header .header-logo{
   position: absolute;
-  left: 6%;
+  left: 3%;
   top: 32px;
   -moz-transition: all 1s ease-in-out;
   -o-transition: all 1s ease-in-out;
@@ -1227,145 +1227,16 @@ header #logo0{
 }
 
 
-header #logo0 a {
+header  .header-logo a{
   display: block;
-  margin-left: 40px;
+  margin: 0px;
   padding: 0;
   outline: 0;
   border: none;
-  width: 100px;
-  height: 100px;
-  background: url('images/backgrounds/logos/JIT\ TEXT\ LOGO\ White\ text.png') no-repeat center;
-  background-size: 100px 50px;
-  font: 0/0 a;
-  text-shadow: none;
-  color: transparent;
-  -moz-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  -webkit-transition: all 0.5s ease-in-out;
-  -ms-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-}
-header #logo1{
-  position: absolute;
-  left: 20%;
-  top: 32px;
-  -moz-transition: all 1s ease-in-out;
-  -o-transition: all 1s ease-in-out;
-  -webkit-transition: all 1s ease-in-out;
-  -ms-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
-
-}
-
-
-header #logo1 a {
-  display: block;
-  margin-left: 40px;
-  padding: 0;
-  outline: 0;
-  border: none;
-  width: 100px;
-  height: 100px;
-  background: url('images/backgrounds/logos/ciirc.png') no-repeat center;
-  background-size: 100px 100px;
-  font: 0/0 a;
-  text-shadow: none;
-  color: transparent;
-  -moz-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  -webkit-transition: all 0.5s ease-in-out;
-  -ms-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-}
-
-header #logo2{
-  position: absolute;
-  left: 34%;
-  top: 32px;
-  -moz-transition: all 1s ease-in-out;
-  -o-transition: all 1s ease-in-out;
-  -webkit-transition: all 1s ease-in-out;
-  -ms-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
-
-}
-
-
-header #logo2 a {
-  display: block;
-  margin-left: 40px;
-  padding: 0;
-  outline: 0;
-  border: none;
-  width: 100px;
-  height: 100px;
+  width: 130px;
+  height: 130px;
   background: url('images/backgrounds/logo.jpg') no-repeat center;
-  background-size: 100px 100px;
-  font: 0/0 a;
-  text-shadow: none;
-  color: transparent;
-  -moz-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  -webkit-transition: all 0.5s ease-in-out;
-  -ms-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-}
-header #logo3{
-  position: absolute;
-  left: 48%;
-  top: 32px;
-  -moz-transition: all 1s ease-in-out;
-  -o-transition: all 1s ease-in-out;
-  -webkit-transition: all 1s ease-in-out;
-  -ms-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
-
-}
-
-
-header #logo3 a {
-  display: block;
-  margin-left: 40px;
-  padding: 0;
-  outline: 0;
-  border: none;
-  width: 150px;
-  height: 100px;
-  background: url('images/backgrounds/logos/aic-jitf-logo.png') no-repeat center;
-  background-size: 120px 60px;
-  font: 0/0 a;
-  text-shadow: none;
-  color: transparent;
-  -moz-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  -webkit-transition: all 0.5s ease-in-out;
-  -ms-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-}
-header #logo4{
-  position: absolute;
-  left: 62%;
-  top: 32px;
-  -moz-transition: all 1s ease-in-out;
-  -o-transition: all 1s ease-in-out;
-  -webkit-transition: all 1s ease-in-out;
-  -ms-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
-
-}
-
-
-header #logo4 a {
-  display: block;
-  margin-left: 60px;
-  padding: 0;
-  outline: 0;
-  border: none;
-  width: 160px;
-  height: 100px;
-  background: url('images/backgrounds/logos/Institutions_Innovation_Council_IIC-removebg-preview.png') no-repeat center;
-  background-size: 160px 100px;
+  background-size: 130px 130px;
   font: 0/0 a;
   text-shadow: none;
   color: transparent;
@@ -1592,76 +1463,19 @@ header #logo4 a {
  * responsive:
  * header section 
  * ------------------------------------------------------------------- */
-@media (min-width:400px) and (max-width: 768px) {
-  header #logo0 a{
-    width: 60px;
-    height: 30px;
-    background-size: 60px 30px;
-    margin: 0px;
-  }
-  header #logo1 a{
-    width: 60px;
-    height: 30px;
-    background-size: 60px 30px;
-    margin: 0px;
-  }
-  header #logo2 a{
-    width: 40px;
-    height: 25px;
-    background-size: 40px 25px;
-    margin-left: 10px;
-  }
-  header #logo3 a{
-    width: 60px;
-    height: 30px;
-    background-size: 60px 30px;
-    margin: 0px;
-  }
-  header #logo4 a{
-    width: 60px;
-    height: 30px;
-    background-size: 60px 30px;
-    margin-left: 10px;
+ @media only screen and (max-width: 768px) {
+  header .header-logo a {
+    width: 80px;
+    height: 60px;
+    background-size: 80px 60px;
   }
 }
 @media only screen and (max-width: 400px) {
-  header #logo0 a{
-    width: 40px;
-    height: 20px;
-    background-size: 40px 20px;
-    margin: 0px;
-  }
-  header #logo1 a{
-    width: 40px;
-    height: 20px;
-    background-size: 40px 20px;
-    margin: 0px;
-  }
-  header #logo2 a{
-    width: 40px;
-    height: 20px;
-    background-size: 40px 20px;
-    margin: 0px;
-  }
-  header #logo3 a{
-    width: 40px;
-    height: 20px;
-    background-size: 40px 20px;
-    margin: 0px;
-  }
-  header #logo4 a{
-    width: 60px;
-    height: 20px;
-    background-size: 60px 30px;
-    margin-left: 0px;
-  }
-}
-@media only screen and (max-width: 550px) {
   #header-menu-trigger .header-menu-text {
     display: none;
   }
 }
-
+#
 
 /* ===================================================================
  *  10. home - (_layout.scss)
@@ -1895,7 +1709,7 @@ html[data-useragent*="MSIE 10.0"] .scrolldown,
 }
 @media only screen and (max-width: 600px) {
   #home {
-    min-height: 702px;
+    min-height: 0px;
   }
 
   .home-content-tablecell .row {
@@ -1932,11 +1746,11 @@ html[data-useragent*="MSIE 10.0"] .scrolldown,
 }
 @media only screen and (max-width: 400px) {
   #home {
-    min-height: 654px;
+    min-height: 0pxpx;
   }
 
   .home-content-tablecell .row {
-    padding-top: 4.8rem;
+    padding-top: 14rem;
     padding-bottom: 10.8rem;
   }
   .home-content-tablecell h3 {
@@ -2635,11 +2449,11 @@ html[data-useragent*="MSIE 10.0"] .scrolldown,
  *
  * ------------------------------------------------------------------- */
 #clients {
-  background-color: #e9eaea;
-  padding: 4.8rem 0 4.8rem;
+  background-color: #0101;;
+  padding: 0rem 0 4.8rem;
 }
 #clients .client-lists .owl-item {
-  opacity: 0.6;
+  opacity: 1;
   -moz-transition: all 0.6s ease-in-out;
   -o-transition: all 0.6s ease-in-out;
   -webkit-transition: all 0.6s ease-in-out;
