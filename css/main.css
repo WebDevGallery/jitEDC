@@ -17,7 +17,7 @@ html {
 }
 @media only screen and (max-width: 400px) {
   html {
-    font-size: 8px;
+    font-size: 9.375px;
   }
 }
 
@@ -1214,7 +1214,7 @@ header .row {
 /* ------------------------------------------------------------------- 
  * header logo - (_layout.css) 
  * ------------------------------------------------------------------- */
-header .header-logo{
+header #logo0{
   position: absolute;
   left: 3%;
   top: 32px;
@@ -1227,16 +1227,16 @@ header .header-logo{
 }
 
 
-header  .header-logo a{
+header #logo0 a {
   display: block;
-  margin: 0px;
+  margin-left: 40px;
   padding: 0;
   outline: 0;
   border: none;
-  width: 130px;
-  height: 130px;
+  width: 120px;
+  height: 120px;
   background: url('images/backgrounds/logo.jpg') no-repeat center;
-  background-size: 130px 130px;
+  background-size: 120px 120px;
   font: 0/0 a;
   text-shadow: none;
   color: transparent;
@@ -1246,6 +1246,7 @@ header  .header-logo a{
   -ms-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
+
 /* ------------------------------------------------------------------- 
  * menu trigger - (_layout.css) 
  * ------------------------------------------------------------------- */
@@ -1463,19 +1464,30 @@ header  .header-logo a{
  * responsive:
  * header section 
  * ------------------------------------------------------------------- */
- @media only screen and (max-width: 768px) {
-  header .header-logo a {
-    width: 80px;
-    height: 60px;
-    background-size: 80px 60px;
+@media (min-width:400px) and (max-width: 768px) {
+  header #logo0 a{
+    width: 100px;
+    height: 100px;
+    background-size: 100px 100px;
+    margin: 0px;
   }
+  
 }
 @media only screen and (max-width: 400px) {
+  header #logo0 a{
+    width: 100px;
+    height: 100px;
+    background-size: 100px 100px;
+    margin: 0px;
+  }
+  
+}
+@media only screen and (max-width: 550px) {
   #header-menu-trigger .header-menu-text {
     display: none;
   }
 }
-#
+
 
 /* ===================================================================
  *  10. home - (_layout.scss)
@@ -1526,7 +1538,7 @@ header  .header-logo a{
 }
 .home-content-tablecell .row {
   position: relative;
-  padding-top: 9.2rem;
+  padding-top: 0rem;
   padding-bottom: 15rem;
 }
 .home-content-tablecell h3 {
@@ -1709,7 +1721,7 @@ html[data-useragent*="MSIE 10.0"] .scrolldown,
 }
 @media only screen and (max-width: 600px) {
   #home {
-    min-height: 0px;
+    min-height: 702px;
   }
 
   .home-content-tablecell .row {
@@ -1727,6 +1739,7 @@ html[data-useragent*="MSIE 10.0"] .scrolldown,
 @media only screen and (max-width: 500px) {
   .home-content-tablecell .row {
     max-width: 420px;
+    padding-top: 0rem;
   }
   .home-content-tablecell h3 {
     font-size: 1.5rem;
@@ -1746,11 +1759,11 @@ html[data-useragent*="MSIE 10.0"] .scrolldown,
 }
 @media only screen and (max-width: 400px) {
   #home {
-    min-height: 0pxpx;
+    min-height: 654px;
   }
 
   .home-content-tablecell .row {
-    padding-top: 14rem;
+    padding-top: 0rem;
     padding-bottom: 10.8rem;
   }
   .home-content-tablecell h3 {
@@ -2349,6 +2362,57 @@ html[data-useragent*="MSIE 10.0"] .scrolldown,
   margin-bottom: 3rem;
   color: #151515;
 }
+
+
+.logo-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.logo {
+  width: 25%; /* Each logo takes up 25% of the container width */
+  max-width: 200px; /* Set a maximum width for responsiveness */
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  margin: auto;
+}
+.logo img {
+  max-width: 100%;
+  height: 100px;
+}
+
+@media only screen and (max-width: 750px) {
+  .logo {
+  width: 25%; /* Each logo takes up 25% of the container width */
+  max-width: 200px; /* Set a maximum width for responsiveness */
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  margin: auto;
+}
+.logo img {
+  max-width: auto;
+  height: 60px;
+}
+}
+
+@media only screen and (max-width: 535px) {
+  .logo {
+  width: 25%; /* Each logo takes up 25% of the container width */
+  max-width: 200px; /* Set a maximum width for responsiveness */
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  margin: auto;
+}
+.logo img {
+  max-width: auto;
+  height: 40px;
+}
+}
+
 #testimonial-slider .testimonial-author .author-info span {
   display: block;
   font-family: "montserrat-bold", sans-serif;
@@ -2385,6 +2449,7 @@ html[data-useragent*="MSIE 10.0"] .scrolldown,
   text-shadow: none;
   color: transparent;
 }
+
 #testimonials .flex-control-paging li a:hover {
   background-color: #555555;
 }
@@ -2449,11 +2514,11 @@ html[data-useragent*="MSIE 10.0"] .scrolldown,
  *
  * ------------------------------------------------------------------- */
 #clients {
-  background-color: #0101;;
-  padding: 0rem 0 4.8rem;
+  background-color: 0101;
+  padding: 4.8rem 0 4.8rem;
 }
 #clients .client-lists .owl-item {
-  opacity: 1;
+  opacity: 0.6;
   -moz-transition: all 0.6s ease-in-out;
   -o-transition: all 0.6s ease-in-out;
   -webkit-transition: all 0.6s ease-in-out;
