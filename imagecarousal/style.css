@@ -1,0 +1,36 @@
+.carousel {
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+  }
+  
+  .slide {
+    display: none;
+  }
+  
+  .slide.active {
+    display: block;
+  }
+  
+  .carousel img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .content {
+    color: white;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  .controls {
+    margin-top: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  

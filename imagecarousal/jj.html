@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="row magazine-content">
+    <div class="col-twelve">
+        <div id="magazine-wrap1" class="bricks-wrapper">
+            <div class="brick magazine-item">
+              <div class="item-wrap animate-this" data-src="logo image" data-sub-html="#01">
+                <img src="images/backgrounds/poster.jpg" class="ensight" alt="Ensight" />
+              </div>
+              <!-- end item-wrap -->
+            </div>
+            <!-- end folio-item -->
+      
+            <div class="brick magazine-item content-magazine">
+              <p class="events-desc animate-this">
+                The eDC proudly hosted an awe-inspiring inauguration event on 3rd July to mark 
+      the beginning of an exciting new chapter. With immense enthusiasm and a touch 
+      of grandeur, this event celebrated the official launch of Entrepreneurship 
+      Development Club and served as a platform to showcase the organization's 
+      commitment to innovation, progress, and the pursuit of excellence. The inaugural 
+      event was organised in the main auditorium of Jyothy Institute of Technology 
+      campus. 
+      
+                <br />
+              </p>
+              <div class="more animate-this">
+                <a class="smoothscroll button stroke ensight-button" href="documentation/documentation.html">
+                  Click here
+                </a>
+              </div>
+              
+            </div>
+            <!-- end magazine-item -->
+          </div>
+      
+          <!-- end -->
+      
+          <div id="magazine-wrap2" class="bricks-wrapper">
+            <div class="brick magazine-item">
+              <div class="item-wrap animate-this" data-src="logo image" data-sub-html="#01">
+                <img src="images/backgrounds/poster.jpg" class="ensight" alt="Ensight" />
+              </div>
+              <!-- end item-wrap -->
+            </div>
+            <!-- end folio-item -->
+      
+            <div class="brick magazine-item content-magazine">
+              <p class="events-desc animate-this">
+                The eDC proudly hosted an awe-inspiring inauguration event on 3rd July to mark 
+      the beginning of an exciting new chapter. With immense enthusiasm and a touch 
+      of grandeur, this event celebrated the official launch of Entrepreneurship 
+      Development Club and served as a platform to showcase the organization's 
+      commitment to innovation, progress, and the pursuit of excellence. The inaugural 
+      event was organised in the main auditorium of Jyothy Institute of Technology 
+      campus. 
+      
+                <br />
+              </p>
+              <div class="more animate-this">
+                <a class="smoothscroll button stroke ensight-button" href="documentation/documentation.html">
+                  Click here
+                </a>
+              </div>
+              
+            </div>
+            <!-- end magazine-item -->
+          </div>
+      
+          <!-- end -->
+      
+          <div id="magazine-wrap3" class="bricks-wrapper">
+            <div class="brick magazine-item">
+              <div class="item-wrap animate-this" data-src="logo image" data-sub-html="#01">
+                <img src="images/backgrounds/poster.jpg" class="ensight" alt="Ensight" />
+              </div>
+              <!-- end item-wrap -->
+            </div>
+            <!-- end folio-item -->
+      
+            <div class="brick magazine-item content-magazine">
+              <p class="events-desc animate-this">
+                The eDC proudly hosted an awe-inspiring inauguration event on 3rd July to mark 
+      the beginning of an exciting new chapter. With immense enthusiasm and a touch 
+      of grandeur, this event celebrated the official launch of Entrepreneurship 
+      Development Club and served as a platform to showcase the organization's 
+      commitment to innovation, progress, and the pursuit of excellence. The inaugural 
+      event was organised in the main auditorium of Jyothy Institute of Technology 
+      campus. 
+      
+                <br />
+              </p>
+              <div class="more animate-this">
+                <a class="smoothscroll button stroke ensight-button" href="documentation/documentation.html">
+                  Click here
+                </a>
+              </div>
+              
+            </div>
+            <!-- end magazine-item -->
+          </div>
+      
+          <!-- end -->
+      
+          <div id="magazine-wrap" class="bricks-wrapper">
+            <div class="brick magazine-item">
+              <div class="item-wrap animate-this" data-src="logo image" data-sub-html="#01">
+                <img src="images/backgrounds/poster.jpg" class="ensight" alt="Ensight" />
+              </div>
+              <!-- end item-wrap -->
+            </div>
+            <!-- end folio-item -->
+      
+            <div class="brick magazine-item content-magazine">
+              <p class="events-desc animate-this">
+                The eDC proudly hosted an awe-inspiring inauguration event on 3rd July to mark 
+      the beginning of an exciting new chapter. With immense enthusiasm and a touch 
+      of grandeur, this event celebrated the official launch of Entrepreneurship 
+      Development Club and served as a platform to showcase the organization's 
+      commitment to innovation, progress, and the pursuit of excellence. The inaugural 
+      event was organised in the main auditorium of Jyothy Institute of Technology 
+      campus. 
+      
+                <br />
+              </p>
+              <div class="more animate-this">
+                <a class="smoothscroll button stroke ensight-button" href="documentation/documentation.html">
+                  Click here
+                </a>
+              </div>
+              
+            </div>
+            <!-- end magazine-item -->
+          </div>
+          <!-- end magazine-wrap -->
+        </div>
+        <!-- end twelve -->
+      </div>
+
+      <br><br>
+      <div class="controls" align="center">
+        <button class="prev-btn">&lt;</button>
+        <button class="next-btn">&gt;</button>
+      </div>
+
+      <script>
+        // Get all elements with class 'bricks-wrapper'
+        const wrappers = document.querySelectorAll('.bricks-wrapper');
+
+        // Loop through each 'bricks-wrapper' element
+        wrappers.forEach((wrapper) => {
+          let currentSlide = 0;
+          const slides = wrapper.querySelectorAll('.brick'); // Get slides within the current 'bricks-wrapper'
+
+          // Function to show a particular slide
+          function showSlide(n) {
+            slides[currentSlide].style.display = 'none'; // Hide the current slide
+            currentSlide = (n + slides.length) % slides.length;
+            slides[currentSlide].style.display = 'block'; // Display the new current slide
+          }
+
+          // Function to move to the previous slide
+          function goLeft() {
+            showSlide(currentSlide - 1);
+          }
+
+          // Function to move to the next slide
+          function goRight() {
+            showSlide(currentSlide + 1);
+          }
+
+          // Initially hide all slides except the first one
+          for (let i = 1; i < slides.length; i++) {
+            slides[i].style.display = 'none';
+          }
+
+          // Add click event listeners to the prev and next buttons for each wrapper
+          const prevBtn = wrapper.querySelector('.prev-btn');
+          const nextBtn = wrapper.querySelector('.next-btn');
+
+          prevBtn.addEventListener('click', goLeft);
+          nextBtn.addEventListener('click', goRight);
+        });
+      </script>
+    </div>
+  </div>
+</body>
+</html>
