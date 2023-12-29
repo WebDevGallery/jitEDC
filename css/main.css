@@ -1972,6 +1972,8 @@ html[data-useragent*="MSIE 10.0"] .scrolldown,
 
 #services .events-desc {
   text-align: justify;
+  margin: auto;
+  
 }
 
 .col-full li{
@@ -3157,7 +3159,7 @@ footer h4.h05::after {
   padding: 0;
 }
 #magazine .intro-wrap {
-  /* padding: 15rem 0 21rem; */
+  padding: 15rem 0 21rem;
   background: #111111;
 }
 #magazine .section-intro h3 {
@@ -3174,7 +3176,7 @@ footer h4.h05::after {
 #magazine .bricks-wrapper:before,
 #magazine .bricks-wrapper:after {
   content: "";
-  display: table;
+  /* display: table; */
 }
 #magazine .bricks-wrapper:after {
   clear: both;
@@ -3244,9 +3246,9 @@ footer h4.h05::after {
 
 .goback{
   display: block;
-    position: fixed;
-    left: 90%;
-    top: 10%;
+  position: fixed;
+  left: 90%;
+  top: 10%;
 }
 .goback img{
   height: 50px;
