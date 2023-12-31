@@ -3,9 +3,9 @@
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Establish database connection (change these credentials as per your setup)
     $servername = "localhost";
-    $username = "root";
-    $password = "";
-    $dbname = "test";
+    $username = "edcjitin_admin";
+    $password = "Jit@2023";
+    $dbname = "edcjitin_subscribers_data";
 
     // Create connection
     $conn = new mysqli($servername, $username, $password, $dbname);
@@ -17,7 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Prepare and bind the SQL statement
     $email = $_POST["email_address"];
-    $stmt = $conn->prepare("INSERT INTO subsdata (email) VALUES (?)");
+    $stmt = $conn->prepare("INSERT INTO subs_data (email) VALUES (?)");
     $stmt->bind_param("s", $email);
 
     // Execute the query
