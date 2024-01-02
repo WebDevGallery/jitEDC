@@ -111,7 +111,15 @@
 }
 
 
+@media screen and (max-width: 1000px) {
+  .upcoming-time{
+    display: none;
 
+  }
+  .upcoming-card{
+    margin: 100px auto;
+  }
+}
 
 
 /*-----------------------------------*\
